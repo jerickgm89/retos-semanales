@@ -60,7 +60,7 @@ let count = 0;
 })();
 ```
 
-- Respuesta
+- **Respuesta**
     
     `1` y `0` se muestra en la consola, la primera instruccion`let count = 0` declara una variable `count`. `inmediate()` es un closure este captura la variable `count` desde el otro scope. Dentro de la funcion inmediate() `count` es 0. Sin embargo, dentro de la condicional, otro `let count = 1` esta declarada en local, esta sobreescribe a `count` del scope global. El primer resultado del `console.log(count)` tiene como resultado `1`.
     
@@ -79,22 +79,22 @@ for (var i = 0; i < 3; i++) {
 }
 ```
 
-- Respuesta
+- **Respuesta**
     
     En la consola saldra `3`, `3`, `3`
     
     Vamos a explicarlo en 2 pasos:
     
-    Paso 1:
+    **Paso 1:**
     
-    - `for()` itera en 3 tiempos. durante cada iteracion una nueva funcion `log()` es creada, el cual captura la variable y lo programara para su ejecución luego de 1000ms
+    - En primera fase `for()` itera en 3 tiempos. durante cada iteracion crea una nueva funcion `log()`, el cual captura la variable y lo programara para su ejecución luego de 1000ms
     - Cuando `for()` completa el ciclo, la variable `i` tiene como valor 3
     
-    Paso 2:
+    **Paso 2:**
     
     La segunda fase ocurre despues de 1000ms
     
-    - `setTimeout()` ejecuta la programación de la función `log()` el cual lee el valor de la variable `i`, el cual es 3 y los manda a la consola 3.
+    - `setTimeout()` ejecuta la programación de la función `log()` el cual lee el valor de la variable `i`, el cual es 3 y los manda a la consola `3`.
 
 ## Pregunta 5: Mensaje correcto o Incorrecto
 

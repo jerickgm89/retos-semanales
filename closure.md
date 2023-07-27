@@ -122,7 +122,7 @@ increment();
 log(); // Que muestra?
 ```
 
-- **Resultado**
+- **Respuesta**
     
     La `Count = 0`, eso muestra en consola
     
@@ -180,7 +180,7 @@ stack.pop(); // => 5
 stack.items; // => undefined
 ```
 
-- **Resultado**
+- **Respuesta**
     
     Esto es una posible solucion de refactorizacion
     
@@ -237,7 +237,7 @@ double(5);  // => 10
 double(11); // => 22
 ```
 
-- **Resultado**
+- **Respuesta**
     
     Este es una posible solución
     
